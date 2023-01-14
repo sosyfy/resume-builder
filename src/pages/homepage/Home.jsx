@@ -6,6 +6,7 @@ import FeaturedResume from './FeaturedResume'
 import Features from './Features'
 import HeroSection from './HeroSection'
 import HowItWorks from './HowItWorks'
+import Pricing from './Pricing'
 import Testimonials from './Testimonials'
 
 function Home() {
@@ -16,6 +17,7 @@ function Home() {
       <Features />
       <HowItWorks />
       <FeaturedResume />
+      <Pricing />
       <Testimonials />
       <FaqSection />  
     </main>

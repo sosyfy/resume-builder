@@ -4,6 +4,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 @layer components {
     .input {
         @apply border-0 outline-none focus:outline-none focus:border-b-2 focus:border-purple-500 caret-inherit cursor-pointer focus:ring-0 rounded md:py-3 bg-gray-200 font-semibold text-gray-700 text-base placeholder:text-gray-400

@@ -1,9 +1,10 @@
 {
-  "name": "jenga-cv-portal",
+  "name": "resume-builder",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@hawk-ui/rich-text-editor": "^4.1.5",
+    "@heroicons/react": "^2.0.13",
     "@testing-library/jest-dom": "^5.16.5",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
