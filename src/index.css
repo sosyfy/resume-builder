@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .input {
+        @apply border-0 outline-none focus:outline-none focus:border-b-2 focus:border-purple-500 caret-inherit cursor-pointer focus:ring-0 rounded md:py-3 bg-gray-200 font-semibold text-gray-700 text-base placeholder:text-gray-400
+    }
+}
+
+@layer base {
+    html {
+        @layer base {
+            html {
+              font-family: Proxima Nova, system-ui, sans-serif;
+            }
+          }
+    }
+  }
