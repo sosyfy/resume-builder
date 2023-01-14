@@ -14,7 +14,7 @@ function Header() {
             </a>
          
             <div className="flex items-center lg:order-2">
-                <button className="px-4 py-1 mr-2 text-base font-semibold text-indigo-700 border-2 border-indigo-700 rounded dark:text-white hover:text-white hover:bg-indigo-700 lg:px-5 lg:py-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Log in</button>
+                <button className="hidden px-4 py-1 mr-2 text-base font-semibold text-indigo-700 border-2 border-indigo-700 rounded dark:text-white hover:text-white hover:bg-indigo-700 lg:px-5 lg:py-2 dark:hover:bg-gray-700 focus:outline-none dark:focus:ring-gray-800">Log in</button>
                 <button href="#" className="text-white bg-indigo-700 hover:bg-white hover:text-indigo-700 border border-indigo-700 font-semibold rounded text-sm px-4 lg:px-5 py-2 lg:py-2.5 mr-2 dark:bg-primary-600 dark:hover:bg-primary-700 focus:outline-none dark:focus:ring-primary-800">Get started</button>
                 <button type="button" className="inline-flex items-center p-2 ml-1 text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200 dark:text-gray-400 dark:hover:bg-gray-700 dark:focus:ring-gray-600" onClick={()=> setOpenMenu(!openMenu)}>
                     <span className="sr-only">Open main menu</span>

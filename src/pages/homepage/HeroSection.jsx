@@ -5,7 +5,7 @@ import resume from "../../assets/Screenshot 2022-11-04 102652.png"
 
 function HeroSection() {
     return (
-        <section className="h-screen px-5 mx-auto bg-white dark:bg-gray-900 pb-7 md:py-10 lg:py-3">
+        <section className="h-full px-5 pb-0 mx-auto bg-white dark:bg-gray-900 md:py-10 lg:py-3">
             <div className="flex flex-col items-start justify-center max-w-screen-xl mx-auto sm:grid lg:gap-10 sm:grid-cols-12">
                 <div className="mt-3 mr-auto lg:mt-32 sm:col-span-12 lg:col-span-7">
                     <h1 className="max-w-2xl mb-4 text-4xl font-extrabold text-center lg:text-start md:text-5xl xl:text-7xl dark:text-white">
@@ -99,7 +99,7 @@ function HeroSection() {
                     </div>
                     <Link
                         to="/templates"
-                        className="inline-flex items-center justify-center w-full px-6 py-3 mr-3 text-base font-medium text-center text-white bg-indigo-700 rounded-lg md:w-2/3 md:ml-16 lg:ml-0 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900" >
+                        className="inline-flex items-center justify-center w-full px-6 py-3 mt-4 mr-3 text-base font-medium text-center text-white bg-indigo-700 rounded-lg md:w-2/3 md:ml-16 lg:ml-0 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900" >
                         Get started
                         <svg
                             className="w-5 h-5 ml-2 -mr-1"
