@@ -20,7 +20,7 @@ function IntroEdit() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-x-16 gap-y-3">
            {/* title */}
          <div className="grid">
-          <label htmlFor="title" className='text-gray-500 text-sm font-medium my-1'>Wanted Job Title</label>
+          <label htmlFor="title" className='my-1 text-sm font-medium text-gray-500'>Wanted Job Title</label>
           <input
            type="text"
            className='input'
@@ -32,7 +32,7 @@ function IntroEdit() {
          </div>
            {/* firstName */}
          <div className="grid">
-          <label htmlFor="title" className='text-gray-500 text-sm font-medium my-1'>First Name</label>
+          <label htmlFor="title" className='my-1 text-sm font-medium text-gray-500'>First Name</label>
           <input
            type="text"
            className='input'
@@ -44,7 +44,7 @@ function IntroEdit() {
          </div>
          {/* lastName */}
          <div className="grid">
-          <label htmlFor="title" className='text-gray-500 text-sm font-medium my-1'>Last Name</label>
+          <label htmlFor="title" className='my-1 text-sm font-medium text-gray-500'>Last Name</label>
           <input
            type="text"
            className='input'
@@ -56,7 +56,7 @@ function IntroEdit() {
          </div>
           {/* email */}
          <div className="grid">
-          <label htmlFor="title" className='text-gray-500 text-sm font-medium my-1'>Email</label>
+          <label htmlFor="title" className='my-1 text-sm font-medium text-gray-500'>Email</label>
           <input
            type="email"
            className='input'
@@ -68,7 +68,7 @@ function IntroEdit() {
          </div>
          {/* phone */}
          <div className="grid">
-          <label htmlFor="title" className='text-gray-500 text-sm font-medium my-1'>Phone</label>
+          <label htmlFor="title" className='my-1 text-sm font-medium text-gray-500'>Phone</label>
           <input
            type="text"
            className='input'
@@ -80,7 +80,7 @@ function IntroEdit() {
          </div>
          {/* country */}
          <div className="grid">
-          <label htmlFor="title" className='text-gray-500 text-sm font-medium my-1'>Country</label>
+          <label htmlFor="title" className='my-1 text-sm font-medium text-gray-500'>Country</label>
           <input
            type="text"
            className='input'
@@ -92,7 +92,7 @@ function IntroEdit() {
          </div>
          {/* city */}
          <div className="grid">
-          <label htmlFor="title" className='text-gray-500 text-sm font-medium my-1'>City</label>
+          <label htmlFor="title" className='my-1 text-sm font-medium text-gray-500'>City</label>
           <input
            type="text"
            className='input'
@@ -104,7 +104,7 @@ function IntroEdit() {
          </div>
          {/* address */}
          <div className="grid">
-          <label htmlFor="title" className='text-gray-500 text-sm font-medium my-1'>Address</label>
+          <label htmlFor="title" className='my-1 text-sm font-medium text-gray-500'>Address</label>
           <input
            type="text"
            className='input'

@@ -31,18 +31,18 @@ function SkillsNoValue() {
       {/* title */}
       <div className=''>
         <h1 className="text-2xl font-bold">Langauges and tools </h1>
-        <p className="text-gray-400 leading-5">
+        <p className="leading-5 text-gray-400">
           Write 2-4 short & energetic sentences to interest the reader! Mention your role, experience & most importantly - your biggest achievements, best qualities and skills.
         </p>
       </div>
       {/* text Area */}
       <h2 className='py-2 text-xl font-bold'>Langauges</h2>
       <div className='w-full mt-2'>
-      <ReactQuill theme="snow" style={{ height : "200px" }} className='mb-4 pb-10 text-gray-600 bg-gray-200' value={lanValue} onChange={setLanValue}/>
+      <ReactQuill theme="snow" style={{ height : "200px" }} className='pb-10 mb-4 text-gray-600 bg-gray-200' value={lanValue} onChange={setLanValue}/>
       </div>
       <h2 className='py-2 text-xl font-bold'>Tools</h2>
       <div className='w-full mt-2 '>
-       <ReactQuill theme="snow" style={{ height : "200px" }} className='mb-4 pb-10 text-gray-600 bg-gray-200' value={toolsValue} onChange={setToolsValue}/>
+       <ReactQuill theme="snow" style={{ height : "200px" }} className='pb-10 mb-4 text-gray-600 bg-gray-200' value={toolsValue} onChange={setToolsValue}/>
       </div>
     </div>
   )

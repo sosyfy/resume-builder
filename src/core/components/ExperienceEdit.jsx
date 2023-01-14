@@ -51,7 +51,7 @@ const handleActiveIndex = (index)=>{
       {/* title */}
       <div className='mx-4'>
         <h1 className="text-2xl font-bold">Employment History</h1>
-        <p className="text-gray-400 leading-5">
+        <p className="leading-5 text-gray-400">
           Write 2-4 short & energetic sentences to interest the reader! Mention your role, experience & most importantly - your biggest achievements, best qualities and skills.
         </p>
       </div>
@@ -59,21 +59,21 @@ const handleActiveIndex = (index)=>{
       {/* form section */}
      { companies?.map((company , index )=> (
        <div 
-       className='flex flex-nowrap gap-1  w-full mt-5 cursor-pointer'
+       className='flex w-full gap-1 mt-5 cursor-pointer flex-nowrap'
        key={index+company.name }
         >
       {/* order changer */}
       <div 
-      className='cursor-pointer mt-8'
+      className='mt-8 cursor-pointer'
       onDragStart={(e) => dragStart(e, index)}
       onDragEnter={(e) => dragEnter(e, index)}
       onDragEnd={drop}
       draggable
       > <TbGridDots /> </div>
       {/* text fields */}
-      <div className='border w-full rounded lg:px-6 px-3'>
+      <div className='w-full px-3 border rounded lg:px-6'>
         {/* top bar */}
-        <div className="py-6 group flex items-center justify-between w-full" 
+        <div className="flex items-center justify-between w-full py-6 group" 
         onClick={()=> handleActiveIndex(index)}
 
         >
@@ -86,7 +86,7 @@ const handleActiveIndex = (index)=>{
         </div>
         {/* input fields */}
         <div className={` ${activeIndex == index ? "" : "hidden"} transition-all duration-300 ease-in w-full grid grid-cols-1 lg:grid-cols-2 lg:gap-x-12 gap-y-4 pb-7`}>
-          <div className="grid col-span-2 lg:col-span-1">
+          <div className="grid col-span-2 ">
             <label htmlFor="title" className='text-gray-500 text-[0.85rem] font-medium my-1 ml-1'>Job Title</label>
             <input
               type="text"
@@ -97,7 +97,7 @@ const handleActiveIndex = (index)=>{
               value={ company?.position }
             />
           </div>
-          <div className="grid col-span-2 lg:col-span-1">
+          <div className="grid col-span-2">
             <label htmlFor="" className='text-gray-500 text-[0.85rem] font-medium my-1 ml-1'>Employer</label>
             <input
               type="text"
@@ -108,7 +108,7 @@ const handleActiveIndex = (index)=>{
               value={ company?.CompanyName}
             />
           </div>
-          <div className=" grid col-span-2 lg:col-span-1">
+          <div className="grid col-span-2  lg:col-span-1">
             <label htmlFor="title" className='text-gray-500 text-[0.85rem] font-medium my-1 ml-1'>Start Date</label>
             <input
               type={"date"}
@@ -119,7 +119,7 @@ const handleActiveIndex = (index)=>{
               value={ company?.startDate }
             />
           </div>
-          <div className=" grid col-span-2 lg:col-span-1">
+          <div className="grid col-span-2  lg:col-span-1">
             <label htmlFor="title" className='text-gray-500 text-[0.85rem] font-medium my-1 ml-1'>End Date</label>
             <input
               type={"date"}
@@ -149,12 +149,12 @@ const handleActiveIndex = (index)=>{
       </div>
        </div>
      )) }
-     <a 
-     className='text-purple-500 text-xs font-bold cursor-pointer hover:text-purple-700 hover:text-sm transition-all'
+     <button
+     className='text-xs font-bold text-purple-500 transition-all cursor-pointer hover:text-purple-700 hover:text-sm'
      onClick={()=>add()}
      >
      <span className="text-lg">+</span> Add more work history  
-     </a>
+     </button>
      
     </div>
   )

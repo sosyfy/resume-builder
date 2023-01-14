@@ -10,26 +10,28 @@ function EditorContainer({ editorsList=[], submit }) {
     const [activeTab , setActiveTab] = useActiveEditor((state)=> [state.activeTab,state.setActiveTab,], shallow)
     const [url , setUrl] = useUrl((state)=> [state.url,state.setUrl,], shallow)
 
-    const handleNext = ()=>{
-        if ( activeTab < editorsList?.length-1 ){
-            setActiveTab( activeTab + 1) 
-        } 
-    }
   
-
     useEffect(() => {
       if ( url !== location.pathname ){
         setActiveTab(0);
         setUrl(location.pathname)
       } 
         
-    }, [location.pathname])
+    }, [ location.pathname])
+
+    useEffect(()=>{ window.scroll(0 , 0)},[activeTab])
     
     const handlePrev = ()=>{
         if ( activeTab > 0){
             setActiveTab( activeTab - 1) 
         }
     }
+
+    const handleNext = ()=>{
+      if ( activeTab < editorsList?.length-1 ){
+          setActiveTab( activeTab + 1) 
+      } 
+  }
 
 
   return (
@@ -43,19 +45,19 @@ function EditorContainer({ editorsList=[], submit }) {
        { activeTab > 0 && 
        <button 
        onClick={handlePrev} 
-       className="inline-flex active:outline-none focus:outline-none active:ring-0 items-center justify-center px-6  lg:ml-0 py-2 mr-3 text-base font-medium text-center text-white rounded-lg bg-indigo-700 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
+       className="inline-flex items-center justify-center px-6 py-2 mr-3 text-base font-medium text-center text-white bg-indigo-700 rounded-lg active:outline-none focus:outline-none active:ring-0 lg:ml-0 hover:bg-primary-800 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900"
        >Back</button>
        }
        { activeTab !== editorsList?.length - 1 &&
          <button 
          onClick={handleNext}
-         className="inline-flex items-center focus:outline-none justify-center px-6 lg:ml-0 py-2 text-base font-medium text-center text-white rounded-lg bg-indigo-700 hover:bg-primary-800 focus:ring-0 focus:ring-primary-300 dark:focus:ring-primary-900 active:outline-none active:ring-0"
+         className="inline-flex items-center justify-center px-6 py-2 text-base font-medium text-center text-white bg-indigo-700 rounded-lg focus:outline-none lg:ml-0 hover:bg-primary-800 focus:ring-0 focus:ring-primary-300 dark:focus:ring-primary-900 active:outline-none active:ring-0"
          >Next and Save</button>
        }
        { activeTab === editorsList?.length - 1 &&
          <button 
          onClick={submit}
-         className="inline-flex focus:outline-none transition-all duration-300  ease-in-out items-center justify-center px-6 lg:ml-0 py-2 text-base font-medium text-center text-white rounded-lg bg-green-500 hover:bg-green-400 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 active:outline-none active:ring-0"
+         className="inline-flex items-center justify-center px-6 py-2 text-base font-medium text-center text-white transition-all duration-300 ease-in-out bg-green-500 rounded-lg focus:outline-none lg:ml-0 hover:bg-green-400 focus:ring-4 focus:ring-primary-300 dark:focus:ring-primary-900 active:outline-none active:ring-0"
          >Submit</button>
        }
       

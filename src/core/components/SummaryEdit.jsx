@@ -17,7 +17,7 @@ function SummaryEdit() {
       {/* title */}
       <div>
         <h1 className="text-2xl font-bold">Proffessional Summary</h1>
-        <p className="text-gray-400 leading-5">
+        <p className="leading-5 text-gray-400">
           Write 2-4 short & energetic sentences to interest the reader! Mention your role, experience & most importantly - your biggest achievements, best qualities and skills.
         </p>
       </div>
