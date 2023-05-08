@@ -5,7 +5,7 @@ import ExperienceEdit from '../../core/components/ExperienceEdit'
 import IntroEdit from '../../core/components/IntroEdit'
 import SkillsNoValue from '../../core/components/SkillsNoValue'
 import SummaryEdit from '../../core/components/SummaryEdit'
-import { useIntro, useWork, useSocials, useEducation, useSkillsNoValue } from '../../stores/data.store'
+import { useIntro, useWork, useEducation, useSkillsNoValue } from '../../stores/data.store'
 import parse from 'html-react-parser';
 
 
